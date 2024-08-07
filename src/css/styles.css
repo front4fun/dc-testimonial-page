@@ -1,0 +1,169 @@
+body {
+  width: auto;
+  height: 100%;
+  background-color: #D4D4D8;
+  margin: auto;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*
+ * font styles
+ */
+ .sora {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* font-size */
+.fs-36 { font-size: 2.25rem; }
+.fs-20 { font-size: 1.25rem; }
+.fs-16 { font-size: 1rem; }
+.fs-14 { font-size: .875rem; }
+/* font-weight */
+.fw-100 { font-weight: 100; }
+.fw-200 { font-weight: 200; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+
+/*
+ * Colors
+ */
+.fc-yellow { color: #f5c044; }
+.fc-green { color: #4ca154; }
+.fc-black { color: #18181b; }
+.fc-dark-gray { color: #52525a; }
+.fc-light-gray { color: #d4d4d8; }
+.fc-soft-white { color: #fafaf9; }
+.fc-white { color: #fff; }
+.bg-yellow { background-color: #f5c044; }
+.bg-green { background-color: #4ca154; }
+.bg-black { background-color: #18181b; }
+.bg-dark-gray { background-color: #52525a; }
+.bg-light-gray { background-color: #d4d4d8; }
+.bg-soft-white { background-color: #fafaf9; }
+.bg-white { background-color: #fff; }
+.shadow { 
+  -webkit-box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05); 
+  -moz-box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05); 
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+.shadow-center { 
+  -webkit-box-shadow: 0px 0 50px 10px rgba(17, 23, 41, 0.05); 
+  -moz-box-shadow: 0px 0 50px 10px rgba(17, 23, 41, 0.05); 
+  box-shadow: 0px 0 50px 10px rgba(17, 23, 41, 0.05);
+}
+.radius-16 { border-radius: 1rem; }
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  padding: 128px 64px;
+  column-gap: 1rem;
+}
+
+.reviewers .reviewers-star {
+  width: 42px;
+  height: 42px;
+  background-color: #f5c044;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviewers-star .reviewers-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.reviewers .reviewers-star,
+.reviewers .reviewers-title {
+  margin-bottom: 1rem;
+}
+
+.reviewers .reviewers-description {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reviewers .reviewers-list {
+  margin: 1rem 0 1rem;
+}
+.reviewers-list .reviewers-list-item {
+  padding-bottom: 1rem;
+}
+.reviewers-list .reviewers-list-item::before {
+  content: "";
+  background-image: url(./../resources/Done_ring_round_fill.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top: 0.25rem;
+  margin-right: 0.2rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+.testimonial-google {
+  margin-left: auto;
+}
+.testimonial-meta {
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.testimonial-cards .testimonial-card {
+  width: 250px;
+  padding: 1.5rem 2rem;
+}
+.testimonial-card .card-header {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card-header .card-logo {
+  width: 5rem;
+}
+.card-header .card-rating {
+  margin-left: 1rem;
+}
+.card-rating .fa-star {
+  font-size: 14px;
+  margin-left: .125rem;
+}
+.card-content .card-testimonial-name {
+  margin-bottom: .5rem;
+}
+.card-content .card-testimonial-description {
+  line-height: 1.5rem;
+}
+.card-header {
+  color: gray;
+}
+
+@media screen and (max-device-width: 640px) {
+  .reviewers {
+    margin-bottom: 2rem;
+  }
+  .testimonial {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .testimonial-google {
+    margin-bottom: 2rem;
+  }
+}
